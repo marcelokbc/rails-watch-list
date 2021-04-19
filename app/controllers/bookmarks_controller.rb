@@ -21,7 +21,6 @@ class BookmarksController < ApplicationController
     redirect_to list_path
   end
 
-
   private
 
   def set_list
