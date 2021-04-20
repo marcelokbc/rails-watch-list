@@ -1,6 +1,6 @@
 .banner {
   background-size: cover;
-  padding: 190px 0;
+  padding: 500px 0;
 }
 
 .banner h1 {
@@ -18,4 +18,9 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   text-align: center;
+}
+
+.banner-top {
+  background-size: cover;
+  padding: 190px 0;
 }

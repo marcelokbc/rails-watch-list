@@ -1,2 +1,10 @@
-<h1><%= @list.name %></h1>
-<img src="<%= @list.images %>">
+
+  <div class="container">
+    <h1>More Info <%= @list.name %> </h1>
+      <div class="box-flex mb-4">
+        <img  src="<%= @list.images %>" >
+        <p><%= link_to "Create Bookmarks", new_list_bookmark_path(@list), class:"btn btn-ghost" %> </p>
+        <p><%= link_to "home", list_path, class:"btn btn-ghost" %></p>
+      </div>
+  </div>
+
