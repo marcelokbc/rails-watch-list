@@ -4,4 +4,14 @@
     <p>Change your life and learn to code at one of our campuses around the world.</p>
     <p><%= link_to "Add new movie", new_list_path, class:"btn btn-ghost " %> </p>
   </div>
+
+
+  <div class="box-flex mb-4">
+    <% @lists.each do |list| %>
+      <div class="box-display">
+        <img src="<%= list.image %>" >
+        <p><%= link_to list.name, list_path(list) %> </p>
+      </div>
+    <% end %>
+  </div>
 </div>
