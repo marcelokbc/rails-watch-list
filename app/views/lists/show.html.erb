@@ -1,10 +1,15 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://fbcoverstreet.com/thumbnail/xFFtDS48t2diBu6zWG6AZTHPkZGxNyAiH6kiuha7w4QncUquqcILKw2e8zJmLGt5.webp)">
+  <h1>Info of <%= @list.name %> </h1>
+</div>
 
-  <div class="container">
-    <h1>More Info <%= @list.name %> </h1>
-      <div class="box-flex mb-4">
-        <img  src="<%= @list.images %>" >
-        <p><%= link_to "Create Bookmarks", new_list_bookmark_path(@list), class:"btn btn-ghost" %> </p>
-        <p><%= link_to "home", lists_path, class:"btn btn-ghost" %></p>
-      </div>
-  </div>
+<div>
+  <ul>
+    <% @list.movies.each do |movie| %>
+      <p> <%= movie.title %> </p>
+    <% end %>
+  </ul>
+</div>
+
+<%= link_to "Create Bookmarks", new_list_bookmark_path(@list), class:"btn btn-ghost" %>
+<%= link_to "Home", lists_path, class:"btn btn-ghost" %>
 
