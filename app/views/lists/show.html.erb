@@ -1,13 +1,11 @@
-<div class="card" style="background-image:  url(https://images4.alphacoders.com/677/677434.png)">
+<div class="card" style="background-image:  url(https://images6.alphacoders.com/479/thumb-1920-479243.jpg)"></div>
+<div class="container">
   <h1>Info of <%= @list.name %> </h1>
-</div>
-
-<div>
-  <ul>
-    <% @list.movies.each do |movie| %>
-      <p> <%= movie.title %> </p>
-    <% end %>
-  </ul>
+    <ul>
+      <% @list.movies.each do |movie| %>
+        <p> <%= movie.title %> </p>
+      <% end %>
+    </ul>
 </div>
 
 <%= link_to "Create Bookmarks", new_list_bookmark_path(@list), class:"btn btn-ghost" %>
